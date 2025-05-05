@@ -32,19 +32,19 @@
     <a href="/cart">Your Cart</a>
   </nav>
 
-  <script is:client>
+  <script>
     const toggle = document.getElementById("menuToggle");
     const menu = document.getElementById("mobileMenu");
     const close = document.getElementById("closeMenu");
 
     toggle?.addEventListener("click", () => {
       menu?.classList.remove("hidden");
-      toggle.classList.add("hidden"); // Skjul burgerikon
+      toggle.classList.add("hidden");
     });
 
     close?.addEventListener("click", () => {
       menu?.classList.add("hidden");
-      toggle.classList.remove("hidden"); // Vis burgerikon igjen
+      toggle.classList.remove("hidden");
     });
   </script>
 </header>
