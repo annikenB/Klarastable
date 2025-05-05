@@ -6,11 +6,11 @@ export default {
       colors: {
         transparent: "transparent",
         current: "currentColor",
-        roed: {
-          25: "#F9C3C4",
-          50: "#F38788",
-          100: "#ED4C4D",
-          200: "#E61011",
+        gul: {
+          25: "#FFFDF1",
+          50: "#FCF8DE",
+          100: "#FBF5C6",
+          200: "#F9E88F",
           300: "#F5F34F",
           400: "#F0BD1F",
           500: "#E0A512",
@@ -20,6 +20,20 @@ export default {
           900: "#6D3B16",
           950: "#3F1E09",
         },
-    }
+
+    },
+    fontFamily: {
+        sans: ["Manrope", "sans-serif"],
+        display: ["Londrina solid", "monospace"],
+      },
+  
+},
 }
-}
+
+plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/container-queries"),
+  ],
+};
